@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — SubTally</title>
+  <meta name="description" content="Help, FAQs and how to get in touch about SubTally." />
+  <meta name="theme-color" content="#F7F5F0" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#131421" media="(prefers-color-scheme: dark)" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="tally" viewBox="0 0 24 24">
+        <rect x="3"   y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="7.8" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="12.6" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="17.4" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="-0.5" y="10.9" width="25" height="2.2" rx="1.1" fill="currentColor" transform="rotate(-18 12 12)"/>
+      </symbol>
+    </defs>
+  </svg>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><svg style="color:#fff"><use href="#tally"/></svg></span>
+        <span>SubTally</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="eyebrow">Support</span>
+      <h1>How can we help?</h1>
+      <p>SubTally is a simple subscription tracker for people who want to know exactly what they're paying for each month. Here's how to use it, and how to get in touch.</p>
+    </div>
+  </div>
+
+  <main class="prose">
+
+    <h2>Get in touch</h2>
+    <p>For bug reports, feature requests, or any other questions, email <a href="mailto:0xB182@gmail.com">0xB182@gmail.com</a>. Most messages get a reply within a couple of days.</p>
+
+    <h2>Common questions</h2>
+
+    <h3>How do I add a subscription?</h3>
+    <p>Tap the + button on the Home screen. Pick from the catalogue of 42 popular services, or choose Custom to add anything you like. Fill in the name, amount, billing cycle, and renewal date — and you're done.</p>
+
+    <h3>How are monthly and annual totals calculated?</h3>
+    <p>Each subscription is normalised to a monthly figure: weekly × 52 ÷ 12, monthly × 1, quarterly ÷ 3, annual ÷ 12. The annual total shown on the home screen is the monthly total × 12. Subscriptions marked as a free trial or paused are not included in either total.</p>
+
+    <h3>How do I mark something as a trial or paused?</h3>
+    <p>Open the subscription, then toggle Trial or Paused. Trials don't roll into your monthly total. Paused subs live in a collapsible section below the active list — visible, but excluded from the maths.</p>
+
+    <h3>Where is my data stored?</h3>
+    <p>Entirely on your device. Nothing is sent anywhere — see the <a href="privacy.html">privacy policy</a> for the full statement. This also means that if you uninstall SubTally, your data is permanently gone. There is no cloud backup.</p>
+
+    <h3>Can I sync between devices?</h3>
+    <p>No. SubTally is intentionally a single‑device app with no cloud component. That's what keeps it private and free of subscriptions. If you're moving to a new phone, use <strong>Settings → Export CSV</strong> to save your list first, then re‑enter it on the new device.</p>
+
+    <h3>My monthly total looks wrong. What do I check?</h3>
+    <p>Three things drive the total: each subscription's amount, its billing cycle (weekly / monthly / quarterly / annual), and whether it's marked as a Trial or Paused. Trials and paused subs are excluded by design. Open the one that looks off and check those three fields.</p>
+
+    <h3>I'm not getting renewal reminders.</h3>
+    <p>Open <strong>iOS Settings → Notifications → SubTally</strong> and make sure notifications are allowed. Reminders are scheduled locally on your phone, so if notifications are blocked at the system level they won't fire. The reminder offset (default 1 day before) lives in <strong>Settings → Reminders</strong>.</p>
+
+    <h3>How do I change the currency, colour, or theme?</h3>
+    <p><strong>Settings → Currency</strong> for the symbol (default AU$). <strong>Settings → Appearance</strong> for Light, Dark, or Auto (which follows your iPhone's system setting). <strong>Settings → Accent</strong> to choose from teal, blue, indigo, purple, rose, orange or green. Changes apply instantly.</p>
+
+    <h3>Can I export my list?</h3>
+    <p>Yes. <strong>Settings → Export CSV</strong> creates a file with all your subscriptions and hands it to the standard iOS Share Sheet. From there you can save it to Files, email it to yourself, or send it anywhere else.</p>
+
+    <h3>Will there be an Android version?</h3>
+    <p>Not currently planned. SubTally is iOS‑only for the foreseeable future.</p>
+
+    <h3>Will there ever be a subscription?</h3>
+    <p>No. SubTally is a one‑time AU$0.99 download with no in‑app purchases, no premium tier, and no subscription. (It'd be a bit weird, given what the app does.)</p>
+
+  </main>
+
+  <footer>
+    <div class="container foot-inner">
+      <div class="foot-meta">
+        <span class="foot-mark"><span class="foot-mark-dot"></span></span>
+        © <span id="year">2026</span> SubTally · Made in Australia
+      </div>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:0xB182@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

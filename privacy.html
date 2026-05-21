@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy — SubTally</title>
+  <meta name="description" content="SubTally collects nothing, sends nothing, and shares nothing. Your data stays on your iPhone." />
+  <meta name="theme-color" content="#F7F5F0" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#131421" media="(prefers-color-scheme: dark)" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="tally" viewBox="0 0 24 24">
+        <rect x="3"   y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="7.8" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="12.6" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="17.4" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="-0.5" y="10.9" width="25" height="2.2" rx="1.1" fill="currentColor" transform="rotate(-18 12 12)"/>
+      </symbol>
+    </defs>
+  </svg>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><svg style="color:#fff"><use href="#tally"/></svg></span>
+        <span>SubTally</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="eyebrow">Privacy Policy</span>
+      <h1>No cloud. No account.<br/><span class="italic grad-text">Just your data.</span></h1>
+      <p>Every subscription stays on your device. No tracking, no servers, no analytics.</p>
+      <div class="pills">
+        <span class="pill">On‑device</span>
+        <span class="pill">No account</span>
+        <span class="pill">No network</span>
+        <span class="pill">Export CSV</span>
+      </div>
+      <p style="margin-top: 22px; font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint);">Last updated: 21 May 2026</p>
+    </div>
+  </div>
+
+  <main class="prose">
+
+    <h2>The short version</h2>
+    <p>SubTally collects nothing, sends nothing, and shares nothing. Your data stays on your iPhone. The developer can't see any of it.</p>
+
+    <h2>What this app does with your data</h2>
+    <p>SubTally is a personal subscription tracker that runs entirely on your device. Everything you enter — service names, costs, billing cycles, renewal dates, notes, tags, and settings — is stored locally on your iPhone using the operating system's standard local storage. It never leaves your device.</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. SubTally does not collect, transmit, or store any of your data on any server. There is no account to create, no login, no email address requested, and no usage telemetry. The developer has no access to anything you enter into the app.</p>
+
+    <h2>Network access</h2>
+    <p>SubTally does not make any network requests. It does not connect to any server, including the developer's. The app behaves identically in airplane mode as it does online. Renewal reminders are scheduled locally by iOS — they do not travel through any push notification service. You can verify this in your iPhone's Settings under <code>SubTally</code>, where you'll see no toggles for cellular data or local network access, because the app requests neither.</p>
+
+    <h2>Third‑party services</h2>
+    <p>SubTally does not include any third‑party SDKs, analytics platforms, advertising networks, or crash‑reporting services. There are no trackers of any kind.</p>
+
+    <h2>Children's privacy</h2>
+    <p>SubTally is rated 4+ and is appropriate for all ages. Because the app collects no personal information from anyone, it complies with the Children's Online Privacy Protection Act (COPPA) and equivalent regulations in other jurisdictions.</p>
+
+    <h2>Deleting your data</h2>
+    <p>To permanently delete everything SubTally has stored, uninstall the app. There is no data held anywhere else that needs to be requested, exported, or erased. Once the app is gone from your device, the data is gone with it.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy ever changes, the updated version will be posted at this URL and the date at the top will be revised. Because the app collects no data, any future change would only narrow the policy further, not expand it.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, email <a href="mailto:0xB182@gmail.com">0xB182@gmail.com</a>.</p>
+
+  </main>
+
+  <footer>
+    <div class="container foot-inner">
+      <div class="foot-meta">
+        <span class="foot-mark"><span class="foot-mark-dot"></span></span>
+        © <span id="year">2026</span> SubTally · Made in Australia
+      </div>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:0xB182@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

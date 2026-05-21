@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en" class="">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SubTally — Every subscription, tallied.</title>
+  <meta name="description" content="A quiet subscription tracker for iPhone. No accounts, no tracking, no cloud — just your subscriptions, tallied on your device." />
+  <meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0F1020" media="(prefers-color-scheme: dark)" />
+
+  <meta property="og:title" content="SubTally — Every subscription, tallied." />
+  <meta property="og:description" content="A quiet subscription tracker for iPhone. Local-first. AU$0.99." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Reusable tally-marks SVG symbol -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="tally" viewBox="0 0 24 24">
+        <rect x="3"   y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="7.8" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="12.6" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="17.4" y="5" width="2.2" height="14" rx="1.1" fill="currentColor"/>
+        <rect x="-0.5" y="10.9" width="25" height="2.2" rx="1.1" fill="currentColor" transform="rotate(-18 12 12)"/>
+      </symbol>
+      <symbol id="tally-lg" viewBox="0 0 100 100">
+        <g fill="currentColor">
+          <rect x="14"   y="27" width="9" height="46" rx="4.5"/>
+          <rect x="33.5" y="27" width="9" height="46" rx="4.5"/>
+          <rect x="53"   y="27" width="9" height="46" rx="4.5"/>
+          <rect x="72.5" y="27" width="9" height="46" rx="4.5"/>
+          <rect x="3"    y="45.5" width="94" height="9" rx="4.5" transform="rotate(-18 50 50)"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><svg style="color:#fff"><use href="#tally"/></svg></span>
+        <span>SubTally</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─────────── Hero ─────────── -->
+  <section class="hero" data-screen-label="01 Hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow reveal reveal-1">iPhone · AU$0.99 · One‑time</span>
+        <h1 class="reveal reveal-2" style="margin-top:18px;">
+          Every subscription,<br />
+          <span class="accent">tallied.</span>
+        </h1>
+        <p class="hero-sub reveal reveal-3">
+          A quiet little app for the streaming, software and small monthly things that quietly stack up. No accounts. No cloud. No tracking. Just numbers that add up — on your device, in your pocket.
+        </p>
+        <div class="hero-ctas reveal reveal-4">
+          <a href="#" class="btn btn-accent btn-appstore" aria-label="Download SubTally on the App Store">
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="currentColor" aria-hidden="true">
+              <path d="M14.94 10.62c-.02-2.34 1.91-3.46 1.99-3.52-1.09-1.59-2.78-1.81-3.38-1.83-1.44-.15-2.81.85-3.54.85-.74 0-1.86-.83-3.06-.81-1.57.02-3.02.91-3.83 2.31-1.63 2.82-.42 7 1.17 9.29.78 1.12 1.71 2.38 2.92 2.34 1.17-.05 1.62-.76 3.04-.76 1.41 0 1.82.76 3.06.73 1.27-.02 2.07-1.14 2.85-2.27.9-1.3 1.27-2.56 1.29-2.63-.03-.01-2.48-.95-2.51-3.77zM12.61 3.66c.65-.79 1.09-1.88.97-2.97-.94.04-2.07.62-2.74 1.4-.6.69-1.13 1.81-.99 2.87 1.05.08 2.12-.53 2.76-1.3z"/>
+            </svg>
+            <span>Download on the App Store</span>
+          </a>
+          <a href="#features" class="btn btn-ghost">See what it does</a>
+        </div>
+        <div class="hero-meta reveal reveal-4">
+          <span>Works offline</span>
+          <span>No accounts</span>
+          <span>iOS 16+</span>
+        </div>
+      </div>
+
+      <div class="phone-stage reveal reveal-3">
+        <div class="phone" role="img" aria-label="SubTally home screen showing a monthly total of AU$ 47.96 and a list of subscriptions">
+          <div class="phone-screen">
+            <div class="statusbar">
+              <span>9:41</span>
+              <span class="statusbar-icons">
+                <span></span><span></span><span></span>
+                <span class="bat"></span>
+              </span>
+            </div>
+
+            <div class="app-title">SubTally</div>
+
+            <div class="hero-card">
+              <div class="hero-card-label">Monthly total</div>
+              <div class="hero-card-amount">
+                <span class="currency">AU$</span>47.96<span class="per">/mo</span>
+              </div>
+              <div class="hero-card-annual">
+                <span>AU$ 575.52 / year</span>
+                <span>5 active</span>
+              </div>
+            </div>
+
+            <div class="sub-row">
+              <div class="sub-emoji" style="background:#E50914;">🎬</div>
+              <div class="sub-meta">
+                <div class="sub-name">Netflix</div>
+                <div class="sub-renew">Renews in 3 days</div>
+              </div>
+              <div class="sub-cost">$18.99</div>
+            </div>
+            <div class="sub-row">
+              <div class="sub-emoji" style="background:#1DB954;">🎧</div>
+              <div class="sub-meta">
+                <div class="sub-name">Spotify</div>
+                <div class="sub-renew">Renews in 9 days</div>
+              </div>
+              <div class="sub-cost">$12.99</div>
+            </div>
+            <div class="sub-row">
+              <div class="sub-emoji" style="background:#16172A;">📝</div>
+              <div class="sub-meta">
+                <div class="sub-name">Notion</div>
+                <div class="sub-renew">Renews in 14 days</div>
+              </div>
+              <div class="sub-cost">$8.00</div>
+            </div>
+            <div class="sub-row">
+              <div class="sub-emoji" style="background:#147EFB;">☁️</div>
+              <div class="sub-meta">
+                <div class="sub-name">iCloud+</div>
+                <div class="sub-renew">Renews in 21 days</div>
+              </div>
+              <div class="sub-cost">$4.99</div>
+            </div>
+            <div class="sub-row">
+              <div class="sub-emoji" style="background:#0F1226;">📰</div>
+              <div class="sub-meta">
+                <div class="sub-name">The Times</div>
+                <div class="sub-renew">Renews in 27 days</div>
+              </div>
+              <div class="sub-cost">$2.99</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real SVG tally decoration -->
+        <div class="tally-deco" style="top: -18px; right: -28px;">
+          <svg width="72" height="72"><use href="#tally-lg"/></svg>
+        </div>
+        <div class="tally-deco" style="bottom: 24px; left: -36px; opacity: 0.22;">
+          <svg width="56" height="56"><use href="#tally-lg"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── Features ─────────── -->
+  <section class="features" id="features" data-screen-label="02 Features">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What it does</span>
+        <h2>Everything you need.<br /><span class="italic grad-text">Nothing you don't.</span></h2>
+        <p>SubTally is built for one job: showing you what you're actually paying for each month — clearly, calmly, and without phoning home.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+          </div>
+          <h3>One hero total</h3>
+          <p>Your monthly and annual spend, normalised across weekly, monthly, quarterly and yearly cycles — right at the top.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+          </div>
+          <h3>Sorted by renewal</h3>
+          <p>Active subscriptions are ordered by what's coming next, so the bill that matters tomorrow is at the top.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+          </div>
+          <h3>Local reminders</h3>
+          <p>Get nudged the day before a renewal, scheduled directly on your phone. No push servers, no notification middleman.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3>Trials &amp; pauses</h3>
+          <p>Mark anything as a free trial or temporarily paused. Those don't roll into your monthly total — only what you're actually paying.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+          </div>
+          <h3>Made to match</h3>
+          <p>Light, dark or automatic, paired with seven accent colours — teal, blue, indigo, purple, rose, orange, green.</p>
+          <div class="palette" aria-hidden="true">
+            <span style="background:#0E9F8E"></span>
+            <span style="background:#2A6FDB"></span>
+            <span style="background:#5B4FD8"></span>
+            <span style="background:#7C4DD6"></span>
+            <span style="background:#E04A6E"></span>
+            <span style="background:#E36A2C"></span>
+            <span style="background:#22C55E"></span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 14v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6"/></svg>
+          </div>
+          <h3>Export, anytime</h3>
+          <p>Send your full list out as a CSV through the system share sheet — to email, Files, anywhere. Your data, your move.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── Catalog strip ─────────── -->
+  <section class="catalog" data-screen-label="03 Catalog">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The catalog</span>
+        <h2>Forty-two services,<br/><span class="italic">one tap to add.</span></h2>
+        <p>The usual suspects come pre-built with their brand colour and emoji. Anything missing? Add a custom service in a few seconds.</p>
+      </div>
+
+      <div class="catalog-rail">
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#E50914;">🎬</div>Netflix</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#1DB954;">🎵</div>Spotify</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#147EFB;">☁️</div>iCloud+</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#FF0000;">🎨</div>Adobe CC</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#113CCF;">🏰</div>Disney+</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#16172A;">📝</div>Notion</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#00A8E1;">📦</div>Prime</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#FA2D48;">🎶</div>Apple Music</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#5B2D8E;">📺</div>Max</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#FF0000;">▶️</div>YouTube</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#D83B01;">📊</div>365</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#0061FF;">📦</div>Dropbox</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#1A8CFF;">🔐</div>1Password</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#4285F4;">🔵</div>Google One</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#107C10;">🎮</div>Game Pass</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#58CC02;">🦉</div>Duolingo</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#FC4C02;">🏃</div>Strava</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#0077B5;">💼</div>LinkedIn</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#16172A;">📰</div>NYT</div>
+        <div class="cat-chip"><div class="cat-chip-emoji" style="background:#24292E;">🐙</div>GitHub</div>
+        <div class="cat-more">+22 more</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── Privacy band ─────────── -->
+  <section style="padding-top: 0; padding-bottom: 48px;" data-screen-label="04 Privacy">
+    <div class="container">
+      <div class="privacy-band">
+        <div>
+          <span class="eyebrow">Privacy, plainly</span>
+          <h2 style="margin-top:14px;">Your subscriptions never<br/>leave your iPhone.</h2>
+          <p style="margin-top:18px;">No accounts. No analytics. No servers. SubTally has no backend at all — your data lives in local storage on your device and that's where it stays. Read the <a href="privacy.html" style="color:var(--accent-light); border-bottom-color: rgba(123,123,240,0.4);">privacy notes</a>.</p>
+        </div>
+        <div class="privacy-tally" aria-hidden="true">
+          <div><span class="check">✓</span> Stored locally on your device</div>
+          <div><span class="check">✓</span> Reminders scheduled on‑device</div>
+          <div><span class="check">✓</span> Works fully offline</div>
+          <div class="strike">✗ &nbsp;Sign‑up, login, password</div>
+          <div class="strike">✗ &nbsp;Analytics, trackers, ads</div>
+          <div class="strike">✗ &nbsp;Cloud sync, servers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── CTA ─────────── -->
+  <section class="cta" data-screen-label="05 CTA">
+    <div class="container">
+      <span class="eyebrow">Try it</span>
+      <h2>A single coffee.<br/><span class="italic grad-text">A clearer month.</span></h2>
+      <p class="cta-sub">
+        SubTally is a one‑time AU$0.99. No subscription to track a subscription tracker.
+      </p>
+      <a href="#" class="btn btn-accent btn-appstore">
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="currentColor" aria-hidden="true">
+          <path d="M14.94 10.62c-.02-2.34 1.91-3.46 1.99-3.52-1.09-1.59-2.78-1.81-3.38-1.83-1.44-.15-2.81.85-3.54.85-.74 0-1.86-.83-3.06-.81-1.57.02-3.02.91-3.83 2.31-1.63 2.82-.42 7 1.17 9.29.78 1.12 1.71 2.38 2.92 2.34 1.17-.05 1.62-.76 3.04-.76 1.41 0 1.82.76 3.06.73 1.27-.02 2.07-1.14 2.85-2.27.9-1.3 1.27-2.56 1.29-2.63-.03-.01-2.48-.95-2.51-3.77zM12.61 3.66c.65-.79 1.09-1.88.97-2.97-.94.04-2.07.62-2.74 1.4-.6.69-1.13 1.81-.99 2.87 1.05.08 2.12-.53 2.76-1.3z"/>
+        </svg>
+        <span>Download on the App Store</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────── Footer ─────────── -->
+  <footer>
+    <div class="container foot-inner">
+      <div class="foot-meta">
+        <span class="foot-mark"><span class="foot-mark-dot"></span></span>
+        © <span id="year">2026</span> SubTally · Made in Australia
+      </div>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:0xB182@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
